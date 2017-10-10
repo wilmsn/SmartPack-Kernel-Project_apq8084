@@ -15,7 +15,7 @@ KERNEL_NAME="SmartPack-Kernel"
 
 KERNEL_VARIANT="lentislte"	# only one variant at a time
 
-KERNEL_VERSION="test"   # leave as such, if no specific version tag
+KERNEL_VERSION="beta-v1"   # leave as such, if no specific version tag
 
 KERNEL_DATE="$(date +"%Y%m%d")"
 
@@ -35,7 +35,7 @@ if [ -z "$KERNEL_VARIANT" ]; then
 fi
 
 if [ "lentislte" == "$KERNEL_VARIANT" ]; then
-	echo -e $COLOR_GREEN"\n building $KERNEL_NAME for $KERNEL_VARIANT\n"$COLOR_NEUTRAL
+	echo -e $COLOR_GREEN"\n building $KERNEL_NAME v. $KERNEL_VERSION for $KERNEL_VARIANT\n"$COLOR_NEUTRAL
 	if [ -e output_kor/.config ]; then
 		rm -f output_kor/.config
 		if [ -e output_kor/arch/arm/boot/zImage ]; then
@@ -72,7 +72,7 @@ if [ "lentislte" == "$KERNEL_VARIANT" ]; then
 fi
 
 if [ "kccat6" == "$KERNEL_VARIANT" ]; then
-	echo -e $COLOR_GREEN"\n building $KERNEL_NAME for $KERNEL_VARIANT\n"$COLOR_NEUTRAL
+	echo -e $COLOR_GREEN"\n building $KERNEL_NAME v. $KERNEL_VERSION for $KERNEL_VARIANT\n"$COLOR_NEUTRAL
 	if [ -e output_eur/.config ]; then
 		rm -f output_eur/.config
 		if [ -e output_eur/arch/arm/boot/zImage ]; then
