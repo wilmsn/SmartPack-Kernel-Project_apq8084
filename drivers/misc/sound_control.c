@@ -9,6 +9,7 @@
 #include <linux/init.h>
 #include <linux/device.h>
 #include <linux/miscdevice.h>
+#include <linux/sound_control.h>
 
 extern void update_headphones_volume_boost(int vol_boost);
 extern void update_mic_gain(int vol_boost);
@@ -16,14 +17,14 @@ extern void update_mic_gain(int vol_boost);
 /*
  * Volume boost value
  */
-int headphones_boost = 0;
+int headphones_boost = 10;
 int headphones_boost_limit = 20;
 int headphones_boost_limit_min = -20;
 
 /*
  * Mic boost value
  */
-int mic_boost = 0;
+int mic_boost = 10;
 int mic_boost_limit = 20;
 int mic_boost_limit_min = -20;
 
