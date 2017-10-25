@@ -483,6 +483,12 @@ extern struct cpufreq_governor cpufreq_gov_interactive_pro;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ZZMOOVE)
 extern struct cpufreq_governor cpufreq_gov_zzmoove;
 #define CPUFREQ_DEFAULT_GOVERNOR       (&cpufreq_gov_zzmoove)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SMARTMAX)
+extern struct cpufreq_governor cpufreq_gov_smartmax;
+#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_smartmax)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE_PRO)
+extern struct cpufreq_governor cpufreq_gov_interactive_pro;
+#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactive_pro)
 #endif
 
 /*********************************************************************

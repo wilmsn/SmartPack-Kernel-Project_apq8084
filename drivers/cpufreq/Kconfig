@@ -179,6 +179,18 @@ config CPU_FREQ_DEFAULT_GOV_ZZMOOVE
 	  frequency lookup tables and optimized scaling triggers instead of
 	  % frequency steps to get smooth up/downscaling dependant on CPU load.
 
+config CPU_FREQ_DEFAULT_GOV_INTERACTIVE_PRO
+	bool "interactive_pro"
+	select CPU_FREQ_GOV_INTERACTIVE_PRO
+	help
+	  Use the CPUFreq governor 'interactive_pro' as default.
+
+config CPU_FREQ_DEFAULT_GOV_SMARTMAX
+	bool "smartmax"
+	select CPU_FREQ_GOV_SMARTMAX
+	help
+	  Use the CPUFreq governor 'smartmax' as default.
+
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -387,6 +399,19 @@ config CPU_FREQ_GOV_ZZMOOVE
 	  'zzmoove' - based on cpufreq_conservative, using predefined
 	  frequency lookup tables and optimized scaling triggers instead of
 	  % frequency steps to get smooth up/downscaling dependant on CPU load.
+	  If in doubt, say N.
+
+config CPU_FREQ_GOV_INTERACTIVE_PRO
+	tristate "'interactive_pro' cpufreq governor"
+	depends on CPU_FREQ
+	default y
+
+config CPU_FREQ_GOV_SMARTMAX
+	tristate "'smartmax' cpufreq governor"
+	depends on CPU_FREQ
+	default y
+	help
+	  smartmax' - a "smart" optimized governor!
 	  If in doubt, say N.
 
 config CPU_INPUT_BOOST
