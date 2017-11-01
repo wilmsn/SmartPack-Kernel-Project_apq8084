@@ -1,5 +1,9 @@
 # Change-logs
 
+## 7. Nov 1, 2017
+Release status: stable-v5_r1
+Changes: Removed usb gadget (keyboard & mouse) support (not working well). Up-to-date with LOS kernel commits till date...
+
 ## 6. October 25, 2017
 Release status: stable-v5
 Changes: Added smartmax and interactive_pro cpufreq govs, usb gadget (keyboard & mouse) support (you probably need this app). Up-to-date with LOS kernel commits till date...
