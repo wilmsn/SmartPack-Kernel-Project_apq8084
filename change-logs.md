@@ -1,5 +1,9 @@
 # Change-logs
 
+## 8. Nov 8, 2017
+Release status: stable-v5_r2
+Changes: Incorporated all the patches from osm0sis's AnyKernel2 repo. Up-to-date with LOS kernel commits till date...
+
 ## 7. Nov 1, 2017
 Release status: stable-v5_r1
 Changes: Removed usb gadget (keyboard & mouse) support (not working well). Up-to-date with LOS kernel commits till date...

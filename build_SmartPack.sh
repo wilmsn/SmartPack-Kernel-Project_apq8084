@@ -24,7 +24,7 @@ KERNEL_NAME="SmartPack-Kernel"
 
 KERNEL_VARIANT="lentislte"	# only one variant at a time
 
-KERNEL_VERSION="stable-v5_r1"   # leave as such, if no specific version tag
+KERNEL_VERSION="stable-v5_r2"   # leave as such, if no specific version tag
 
 KERNEL_DATE="$(date +"%Y%m%d")"
 
