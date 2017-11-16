@@ -1,5 +1,9 @@
 # Change-logs
 
+## 9. Nov 16, 2017
+Release status: stable-v6
+Changes: Up-to-date with LOS kernel commits till date (which includes a major update in Linux Kernel)...
+
 ## 8. Nov 8, 2017
 Release status: stable-v5_r2
 Changes: Incorporated all the patches from osm0sis's AnyKernel2 repo. Up-to-date with LOS kernel commits till date...
