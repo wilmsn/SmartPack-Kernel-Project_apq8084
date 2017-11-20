@@ -1,5 +1,9 @@
 # Change-logs
 
+## 10. Nov 20, 2017
+Release status: stable-v6_r1
+Changes: Wlan issue in kccat6 will be hopefully fixed now.
+
 ## 9. Nov 16, 2017
 Release status: stable-v6
 Changes: Up-to-date with LOS kernel commits till date (which includes a major update in Linux Kernel)...

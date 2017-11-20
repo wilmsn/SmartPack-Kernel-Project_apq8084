@@ -13,9 +13,9 @@ ARCHITECTURE="arm"
 
 KERNEL_NAME="SmartPack-Kernel"
 
-KERNEL_VARIANT="kccat6"	# only one variant at a time
+KERNEL_VARIANT="lentislte"	# only one variant at a time
 
-KERNEL_VERSION="stable-v6"   # leave as such, if no specific version tag
+KERNEL_VERSION="stable-v6_r1"   # leave as such, if no specific version tag
 
 KERNEL_DATE="$(date +"%Y%m%d")"
 
@@ -83,7 +83,7 @@ if [ "kccat6" == "$KERNEL_VARIANT" ]; then
 	fi
 
 	make -C $(pwd) O=output_eur VARIANT_DEFCONFIG=apq8084_sec_kccat6_eur_defconfig apq8084_sec_defconfig SELINUX_DEFCONFIG=selinux_defconfig && make -j$NUM_CPUS -C $(pwd) O=output_eur
-	if [ -e output_kor/arch/arm/boot/zImage ]; then
+	if [ -e output_eur/arch/arm/boot/zImage ]; then
 		# Copying “zImage” to “anykernel” directory
 		cp output_eur/arch/arm/boot/zImage anykernel_SmartPack/
 		# compile dtb if required
