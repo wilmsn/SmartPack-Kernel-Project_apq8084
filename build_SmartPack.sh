@@ -6,16 +6,21 @@ COLOR_NEUTRAL="\033[0m"
 
 echo -e $COLOR_GREEN"\n SmartPack-Kernel Build Script\n"$COLOR_NEUTRAL
 #
-echo -e $COLOR_GREEN"\n (c) sunilpaulmathew@xda-developers.com\n"$COLOR_NEUTRAL
+echo -e $COLOR_GREEN"\n created by sunilpaulmathew@xda-developers.com\n"$COLOR_NEUTRAL
+#
+echo -e $COLOR_GREEN"\n maintained by wilmsn@xda-developers.com\n"$COLOR_NEUTRAL
 
-TOOLCHAIN="/home/sunil/arm-linux-androideabi-4.9-linaro/bin/arm-linux-androideabi-"
+
+#TOOLCHAIN="/home/sunil/arm-linux-androideabi-4.9-linaro/bin/arm-linux-androideabi-"
+TOOLCHAIN="/home/norbert/ndk/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64/bin/arm-linux-androideabi-"
 ARCHITECTURE="arm"
 
 KERNEL_NAME="SmartPack-Kernel"
 
-KERNEL_VARIANT="lentislte"	# only one variant at a time
+#KERNEL_VARIANT="lentislte"	# only one variant at a time
+KERNEL_VARIANT="kccat6"     # only one variant at a time
 
-KERNEL_VERSION="stable-v6_r1"   # leave as such, if no specific version tag
+KERNEL_VERSION="stable-v7"   # leave as such, if no specific version tag
 
 KERNEL_DATE="$(date +"%Y%m%d")"
 

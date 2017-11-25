@@ -4,12 +4,13 @@
 # Credits: osm0sis @ xda-developers
 #
 # Modified by sunilpaulmathew@xda-developers.com
+# Maintained by wilmsn@xda-developers.com
 #
 
 ## AnyKernel setup
 # begin properties
 properties() {
-kernel.string=SmartPack Kernel by sunilpaulmathew@xda-developers.com
+kernel.string=SmartPack Kernel by wilmsn@xda-developers.com
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
